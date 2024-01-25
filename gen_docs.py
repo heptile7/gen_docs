@@ -1,7 +1,6 @@
 import openai
 import os
 api_key = os.getenv('OPENAI_API_KEY')
-# api_key = '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'
 client = openai.OpenAI(api_key=api_key)
 
 def generate_code_documentation(code):
