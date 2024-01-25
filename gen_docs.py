@@ -1,7 +1,7 @@
 import openai
 import os
 api_key = os.getenv('OPENAI_API_KEY')
-api_key = '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'
+# api_key = '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'
 client = openai.OpenAI(api_key=api_key)
 
 def generate_code_documentation(code):
@@ -41,13 +41,5 @@ def all_codes():
 
 
 if __name__ == "__main__":
-    # Replace this with the actual code you want to document
-    sample_code = """def add_numbers(a, b):\n\treturn a + b\n\nresult = add_numbers(3, 4)\nprint(result)"""
-    # file = "reports/report_generator.py"
-    # code = open(file).read()
     all_codes()
 
-    # Generate code documentation
-    # code_doc = generate_code_documentation(str(code))
-    # with open(f"{file}_documentation.txt","w") as doc:
-        # doc.write(code_doc)
