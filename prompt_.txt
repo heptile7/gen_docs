@@ -1,0 +1,11 @@
+**Use Case 1: Retail Store Inventory Management**
+
+This Inventory Management System can be a perfect fit for a retail store. Retail stores have a large number of different products that need to be tracked. This system can help them manage their products effectively. They can add new products to the inventory, track the quantity of each product, and generate reports to get an overview of the current inventory.
+
+For example, a clothing retail store can add different types of clothing items as products in the inventory. Each product can have its unique ID, name, price, and quantity. The store can update the quantity of the products as they are sold or new stock is added. They can generate reports to see the current stock of each product. This can help them in restocking the products on time and avoid overstocking or understocking.
+
+**Use Case 2: Warehouse Inventory Management**
+
+Another use case can be in a warehouse. Warehouses store products for different businesses. They need to keep track of the quantity of each product and update it as products are added or removed. This system can help them in managing their inventory effectively.
+
+For example, a warehouse storing electronic items can add different types of electronics as products in the inventory. They can update the quantity of the products as they are stored or dispatched. They can generate reports to see the current stock of each product. This can help them in managing the space in the warehouse effectively and informing the businesses about the current stock of their products.
