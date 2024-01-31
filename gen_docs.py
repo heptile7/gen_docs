@@ -28,6 +28,15 @@ def generate_code_documentation(code):
     generated_documentation = response.choices[0].message
     return generated_documentation.content
 
+def combine_txt_files(directory_path, output_file_path):
+    with open(output_file_path, 'w') as output_file:
+        for filename in os.listdir(directory_path):
+            if filename.endswith(".txt") and not os.path.join(directory_path, filename) == output_file_path:
+                file_path = os.path.join(directory_path, filename)
+                with open(file_path, 'r') as input_file:
+                    output_file.write(file_path)
+                    output_file.write(input_file.read() + '\n')
+
 def all_codes():
     for root, dirs, files in os.walk('.'):
         for file in files:
@@ -37,6 +46,10 @@ def all_codes():
                 code_doc = generate_code_documentation(str(code))
                 with open(f"docs\\{file.rstrip('.py')}_documentation.txt","w") as doc:
                     doc.write(code_doc)
+    
+    # Combine all code documents
+    combine_txt_files('.\docs', r'.\docs\full_docs.txt')
+
 
 
 if __name__ == "__main__":
